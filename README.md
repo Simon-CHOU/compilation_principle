@@ -319,7 +319,7 @@ Hopcroft 算法
 
 ## 参考书
 
-- 课程的主要参考书：《编译器工程》（第二版）[Engineering: A Compiler 2nd Edition](https://www.amazon.com/Engineering-Compiler-Keith-Cooper/dp/012088478X)
+- 课程的主要参考书：《编译器工程》（第二版）[Keith D. Cooper, Linda Torczon — Engineering: A Compiler 2nd Edition](https://www.amazon.com/Engineering-Compiler-Keith-Cooper/dp/012088478X) [pdf下载](http://www.r-5.org/files/books/computers/compilers/writing/Keith_Cooper_Linda_Torczon-Engineering_a_Compiler-EN.pdf)
 - 课程的其它参考书：
   - 《现代编译器实现---C语言描述》
   - 《编译原理：技术与工具》
