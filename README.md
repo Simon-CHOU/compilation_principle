@@ -220,7 +220,7 @@ while (workList != [])
 以上一节练习3：`a(b|c)*` 的 `NFA` 为例，用子集构造法求ε闭包
 ![abc_nfa](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/abc_nfa.png)
 
-|setp|q0|Q|workList(FIFO)|q|c|delta(q,c)|t|D[q,c]，仅δ|
+|step|q0|Q|workList(FIFO)|q|c|delta(q,c)|t|D[q,c]，仅δ|
 |-|-|-|-|-|-|-|-|-|
 |1|{n0}|{{n0}}|{{n0}}|-|-|-|-|-|
 |1|{n0}|{{n0}}|{}|{n0}|a|-|-|-|
