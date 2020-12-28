@@ -317,6 +317,14 @@ Hopcroft 算法
 - [HIT](https://www.bilibili.com/video/av17649289)
 - [Stanford](https://www.bilibili.com/video/av27845355)
 
+## 参考书
+
+- 课程的主要参考书：《编译器工程》（第二版）[Engineering: A Compiler 2nd Edition](https://www.amazon.com/Engineering-Compiler-Keith-Cooper/dp/012088478X)
+- 课程的其它参考书：
+  - 《现代编译器实现---C语言描述》
+  - 《编译原理：技术与工具》
+  - 《高级编译器设计与实现》
+
 ## 绘图工具
 
 - [graphviz](https://graphviz.gitlab.io/documentation/)
