@@ -312,7 +312,7 @@ Hopcroft 算法
 
 ## MOOC
 
-- [USTC(本提纲来源)](https://www.bilibili.com/video/av32233569/)
+- [USTC Cimpiler 2014 Fall](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/),[网易云课堂](https://study.163.com/instructor/3357972.htm),[B站搬运：BV1m7411d7iS](https://www.bilibili.com/video/BV1m7411d7iS)
 - [SE系列](https://study.163.com/series/1001245004.htm)
 - [HIT](https://www.bilibili.com/video/av17649289)
 - [Stanford](https://www.bilibili.com/video/av27845355)
