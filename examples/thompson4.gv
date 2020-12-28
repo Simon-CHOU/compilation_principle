@@ -1,0 +1,11 @@
+digraph thompson4 {
+ rankdir=LR;
+ node [shape = doublecircle]; 5;
+ node [shape = circle];
+ 0 -> 1 [ label = "ε" ]; 
+ 1 -> 2 [ label = "e1" ]; 
+ 0 -> 3 [ label = "ε" ]; 
+ 3 -> 4 [ label = "e2" ]; 
+ 2 -> 5 [ label = "ε" ]; 
+ 4 -> 5 [ label = "ε" ]; 
+}

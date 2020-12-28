@@ -1,0 +1,9 @@
+digraph lexcial_analyzer_gen_flow {
+ rankdir=LR;
+ size="8,5";
+    node [fontname="FangSong" shape =  box];"词法分析器代码";
+ node [fontname="FangSong" shape = circle];
+ RE -> NFA [ label = "Thompson算法" ];
+ NFA -> DFA [ label = "子集构造算法" ];
+ DFA -> "词法分析器代码" [ label = "Hopcroft最小化算法" ];
+}

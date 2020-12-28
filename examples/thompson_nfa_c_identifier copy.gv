@@ -1,0 +1,12 @@
+digraph thompson_nfa_c_identifier {
+ rankdir=LR;
+ node [shape = doublecircle]; 5;
+ node [shape = circle];
+ 0 -> 1 [ label = "a-zA-z_" ]; 
+ 1 -> 2 [ label = "ε" ]; 
+ 2 -> 3 [ label = "ε" ]; 
+ 3 -> 4 [ label = "a-zA-z_0-9" ]; 
+ 4 -> 3 [ label = "ε" ]; 
+ 4 -> 5 [ label = "ε" ]; 
+ 2 -> 5 [ label = "ε" ]; 
+}

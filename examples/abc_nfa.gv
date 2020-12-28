@@ -1,0 +1,17 @@
+digraph abc_nfa {
+    rankdir=LR;
+    node[shape = doublecircle] n9;
+    node[shape = circle];
+    n0 -> n1 [ label = "a" ];
+    n1 -> n2 [ label = "ε" ];
+    n2 -> n3 [ label = "ε" ];
+    n3 -> n4 [ label = "ε" ];
+    n3 -> n6 [ label = "ε" ];
+    n6 -> n7 [ label = "c" ];
+    n4 -> n5 [ label = "b" ];   
+    n7 -> n8 [ label = "ε" ];
+    n5 -> n8 [ label = "ε" ];
+    n8 -> n9 [ label = "ε" ];
+    n8 -> n3 [ label = "ε" ];
+    n2 -> n9 [ label = "ε" ];
+}

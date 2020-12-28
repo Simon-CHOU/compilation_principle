@@ -1,0 +1,6 @@
+digraph thompson2 {
+ rankdir=LR;
+ node [shape = doublecircle]; 1;
+ node [shape = circle];
+ 0 -> 1 [ label = "c" ]; 
+}
