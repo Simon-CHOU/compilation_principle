@@ -21,7 +21,7 @@
 
 ---
 
-![从正则表达式到词法分析器](/img/lexcial_analyzer_gen_flow.png)
+![从正则表达式到词法分析器](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/lexcial_analyzer_gen_flow.png)
 
 ## 正则表达式 RE(Regular Expression)
 
@@ -68,7 +68,7 @@ e → ε // 空集
 
 ### 自动机例一
 
-![fa_012ab](/img/FA_012ab.png)
+![fa_012ab](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/FA_012ab.png)
 
 在上面这个自动机中：
 
@@ -80,7 +80,7 @@ e → ε // 空集
 
 ### 自动机例二
 
-![fa_01ab](/img/FA_01ab.png)
+![fa_01ab](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/FA_01ab.png)
 
 在上面这个自动机中：
 
@@ -110,7 +110,7 @@ e → ε // 空集
 
 ### `DFA` 的实现
 
-![fa_012ab](/img/FA_012ab.png)
+![fa_012ab](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/FA_012ab.png)
 
 把自动机看做有向图，使用邻接矩阵实现，如下表：
 
@@ -133,24 +133,24 @@ e → ε // 空集
 正则表达式的5种形式化定义与对应 `NFA` 的转化如下：
 
 1. e → ε
-![空串](/img/thompson1.png)
+![空串](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/thompson1.png)
 1. e → c
-![字符](/img/thompson2.png)
+![字符](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/thompson2.png)
 1. e → e | e
-![选择](/img/thompson3.png)
+![选择](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/thompson3.png)
 1. e → e e
-![连接](/img/thompson4.png)
+![连接](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/thompson4.png)
 1. e → e*
-![闭包](/img/thompson5.png)
+![闭包](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/thompson5.png)
 
 - Q：为什么转化出来的 `NFA` 都包含了很多 `ε`？
 - A：保留ε的递归算法更加工整
 
 练习1：构造C语言标识符的 `NFA`，以子母或下划线开头，后跟零个或多个子母、数字或下划线，`^[a-zA-z_]\w*$`， `\w` 匹配任何字类字符，包括下划线。与"[A-Za-z0-9_]"等效。
-![c_identifier](/img/thompson_nfa_c_identifier.png)
+![c_identifier](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/thompson_nfa_c_identifier.png)
 
 练习2：同上，十进制整数的 `DFA`。
-![decimal_int](/img/thompson_nfa_decimal_int.png)
+![decimal_int](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/thompson_nfa_decimal_int.png)
 
 不难从上面的练习看出正则的语法糖，如：`[c1-cn] == [c1|c2|...|cn]`
 我们可以引入更多的语法糖，来简化构造
@@ -168,7 +168,7 @@ e → ε // 空集
 语法糖的本质是对5种原始表达式形式的封装。同样的例子可以联想到，图灵机只定义了：赋值、跳转两种运算，汇编及各种高级语言都是对两种运算进行的不同抽象层次的封装，目的就在于简化构造。
 
 练习3：画出`a(b|c)*`的 `NFA`
-![abc_nfa](/img/abc_nfa.png)
+![abc_nfa](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/abc_nfa.png)
 
 ## [`NFA` 转 `DFA`](https://www.geeksforgeeks.org/program-implement-nfa-epsilon-move-dfa-conversion/)
 
@@ -218,7 +218,7 @@ while (workList != [])
 ```
 
 以上一节练习3：`a(b|c)*` 的 `NFA` 为例，用子集构造法求ε闭包
-![abc_nfa](/img/abc_nfa.png)
+![abc_nfa](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/abc_nfa.png)
 
 |setp|q0|Q|workList(FIFO)|q|c|delta(q,c)|t|D[q,c]，仅δ|
 |-|-|-|-|-|-|-|-|-|
@@ -280,9 +280,9 @@ while (workList != [])
 - δ={(q0,a)→q1,(q1,b)→q2,(q1,c)→q3,(q2,b)→q2,(q2,c)→q3,(q3,b)→q2,(q3,c)→q3}
 
 绘制 `DFA` 如下图：
-![abc_dfa](/img/abc_dfa.png)
+![abc_dfa](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/abc_dfa.png)
 对比原 `NFA`：
-![abc_nfa](/img/abc_nfa.png)
+![abc_nfa](https://raw.githubusercontent.com/Simon-CHOU/compilation_principle/master/img/abc_nfa.png)
 
 至此，完整地实现了 `NFA` 到 `DFA`的转化。
 
